@@ -68,8 +68,8 @@ const Hero = () => {
             transition={{ delay: 1, duration: 0.6 }}
           >
             <motion.a
-              href="/Shajedul Kabir Rafi CV.pdf"
-              download
+              href="/Shajedul-Kabir-Rafi-CV.pdf"
+              download="Shajedul Kabir Rafi CV.pdf"
               className="btn btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -93,15 +93,15 @@ const Hero = () => {
             transition={{ delay: 1.2, duration: 0.6 }}
           >
             <div className="stat-item">
-              <span className="stat-number gradient-text">140+</span>
+              <span className="stat-number gradient-text">277+</span>
               <span className="stat-label">Contributions</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number gradient-text">24</span>
+              <span className="stat-number gradient-text">27</span>
               <span className="stat-label">Repositories</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number gradient-text">24</span>
+              <span className="stat-number gradient-text">27</span>
               <span className="stat-label">Stars Earned</span>
             </div>
           </motion.div>

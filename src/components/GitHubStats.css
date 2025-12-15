@@ -542,4 +542,149 @@
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
   }
+
+  .extended-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages-legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Overview Content Layout */
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Extended Stats Section */
+.extended-stats {
+  padding: 2rem;
+}
+
+.extended-stats h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.extended-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.extended-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(168, 85, 247, 0.05);
+  transition: all 0.3s ease;
+}
+
+.extended-stat-item:hover {
+  background: rgba(168, 85, 247, 0.1);
+  transform: translateY(-2px);
+}
+
+.extended-stat-icon {
+  font-size: 1.5rem;
+  color: var(--primary-purple);
+}
+
+.extended-stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.extended-stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Languages Section */
+.languages-section {
+  padding: 2rem;
+}
+
+.languages-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.languages-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: rgba(168, 85, 247, 0.1);
+}
+
+.language-segment {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.language-segment:hover {
+  filter: brightness(1.2);
+  transform: scaleY(1.2);
+}
+
+.languages-legend {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.language-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.language-name {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.language-percent {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .extended-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .languages-legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .extended-stat-value {
+    font-size: 1.5rem;
+  }
 }
